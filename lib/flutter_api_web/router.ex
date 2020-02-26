@@ -19,6 +19,12 @@ defmodule FlutterApiWeb.Router do
     get "/", PageController, :index
   end
 
+  scope "/" do
+    pipe_through :api
+
+    forward "/api", Absinthe.Plug, schema: FlutterApiWeb.Api.Schema
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", FlutterApiWeb do
   #   pipe_through :api

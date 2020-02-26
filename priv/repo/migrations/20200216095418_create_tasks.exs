@@ -8,6 +8,5 @@ defmodule FlutterApi.Repo.Migrations.CreateTasks do
 
       timestamps()
     end
-
   end
 end

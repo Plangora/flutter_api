@@ -28,7 +28,9 @@ defmodule FlutterApi.TodosTest do
     end
 
     test "update_task/2 with valid data updates the task", %{task: task} do
-      assert {:ok, %Task{} = task} = Todos.update_task(task, %{completed: false, name: "some updated name"})
+      assert {:ok, %Task{} = task} =
+               Todos.update_task(task, %{completed: false, name: "some updated name"})
+
       assert task.completed == false
       assert task.name == "some updated name"
     end
