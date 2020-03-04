@@ -16,4 +16,19 @@ defmodule FlutterApiWeb.Api.Schema do
       resolve &Resolvers.Todos.get_task/3
     end
   end
+
+  mutation do
+    @desc "Create a task"
+    field :create_task, :task do
+      arg :task, non_null(:task_input)
+      resolve &Resolvers.Todos.create_task/3
+    end
+
+    @desc "Updates a task"
+    field :update_task, :task do
+      arg :task, non_null(:task_input)
+      arg :id, non_null(:id)
+      resolve &Resolvers.Todos.update_task/3
+    end
+  end
 end

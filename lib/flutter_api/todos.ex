@@ -37,6 +37,8 @@ defmodule FlutterApi.Todos do
   """
   def get_task!(id), do: Repo.get!(Task, id)
 
+  def get_task(id), do: Repo.get(Task, id)
+
   @doc """
   Creates a task.
 

@@ -6,4 +6,9 @@ defmodule FlutterApiWeb.Api.Types.Task do
     field :name, non_null(:string)
     field :completed, non_null(:boolean)
   end
+
+  input_object :task_input do
+    field :name, non_null(:string)
+    field :completed, non_null(:boolean)
+  end
 end

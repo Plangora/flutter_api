@@ -1,4 +1,4 @@
-# Todo App with Flutter and Absinthe
+# Todo App with Flutter and Absinthe Part 3
 
 To start your Phoenix server:
 
@@ -12,7 +12,7 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
 ## Reference Video
-[https://youtu.be/MbzkYESdDsU](https://youtu.be/MbzkYESdDsU)
+[https://youtu.be/AWXI08v6SMQ](https://youtu.be/AWXI08v6SMQ)
 
 ## Learn more
 
